@@ -1,0 +1,4 @@
+#!/bin/bash
+#
+
+sh /home/assem/.scripts/status.sh || while true; do date; sleep 1; done 
