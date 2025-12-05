@@ -80,6 +80,7 @@ install: dwl
 	mkdir -p $(DESTDIR)$(DATADIR)/wayland-sessions
 	cp -f dwl.desktop $(DESTDIR)$(DATADIR)/wayland-sessions/dwl.desktop
 	chmod 644 $(DESTDIR)$(DATADIR)/wayland-sessions/dwl.desktop
+	mkdir -p usr/share/wayland-sessions
 	cp -f dwl.desktop /usr/share/wayland-sessions/dwl.desktop
 	chmod 644 /usr/share/wayland-sessions/dwl.desktop
 uninstall:
