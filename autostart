@@ -1,6 +1,13 @@
 #!/bin/bash
 #
 
+USER_AUTOSTART="/home/assem/.scripts/autostart.sh"
+
+if [ -f $USER_AUTOSTART ]
+then
+    bash $USER_AUTOSTART &
+fi
+
 # Update Dbus Environment
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
 
@@ -17,6 +24,3 @@ sleep 1
 
 # Start main xdg-desktop-portal
 /usr/libexec/xdg-desktop-portal &
-
-# Polkit agent
-lxpolkit &
