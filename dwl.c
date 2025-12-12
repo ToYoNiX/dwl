@@ -413,6 +413,7 @@ static struct wlr_tablet_v2_tablet *tablet = NULL;
 static struct wlr_tablet_v2_tablet_tool *tablet_tool = NULL;
 static struct wlr_tablet_v2_tablet_pad *tablet_pad = NULL;
 static struct wlr_surface *tablet_curr_surface = NULL;
+static struct wl_listener tablet_device_destroy = {.notify = destroytablet};
 static struct wl_listener destroy_tablet_surface_listener = {.notify = destroytabletsurfacenotify};
 
 static struct wlr_scene_rect *root_bg;
