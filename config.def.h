@@ -15,7 +15,7 @@ static const unsigned int systrayspacing   = 2; /* systray spacing */
 static const int showsystray               = 1; /* 0 means no systray */
 static const int showbar                   = 1; /* 0 means no bar */
 static const int topbar                    = 1; /* 0 means bottom bar */
-static const int refresh_colors            = 0; /* 1 means reloading colors when the session starts*/
+static const int refresh_colors            = 1; /* 1 means reloading colors when the session starts*/
 static const char *colors_file             = "/home/assem/.cache/wal/colors-wal-dwl.h"; /* change the username */
 static const char *fonts[]                 = {"monospace:size=10"};
 static const float rootcolor[]             = COLOR(0x000000ff);
