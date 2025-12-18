@@ -22,7 +22,7 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "wbg", "/path/to/your/image", NULL,
+        "lxpolkit", NULL,
         NULL /* terminate */
 };
 
