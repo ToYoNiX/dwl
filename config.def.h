@@ -36,7 +36,9 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
+        "/home/assem/.scripts/autostart.sh", NULL,
         "lxpolkit", NULL,
+        "mako", NULL,
         NULL /* terminate */
 };
 

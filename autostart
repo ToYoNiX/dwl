@@ -1,12 +1,7 @@
 #!/bin/bash
 #
 
-USER_AUTOSTART="/home/assem/.scripts/autostart.sh"
-
-if [ -f $USER_AUTOSTART ]
-then
-    bash $USER_AUTOSTART &
-fi
+# FOR UTILS REFER TO THE AUTOSTART SECTION IN CONFIG.DEF.H
 
 # Update Dbus Environment
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
