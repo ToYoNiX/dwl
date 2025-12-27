@@ -16,7 +16,7 @@ static const int showsystray               = 1; /* 0 means no systray */
 static const int showbar                   = 1; /* 0 means no bar */
 static const int topbar                    = 1; /* 0 means bottom bar */
 static const int refresh_colors            = 1; /* 1 means reloading colors when the session starts*/
-static const char *colors_file             = "/home/assem/.cache/wal/colors-wal-dwl.h"; /* change the username */
+static const char *colors_file             = "/home/assem/.cache/wal/colors-dwl.txt"; /* change the username */
 static const char *fonts[]                 = {"monospace:size=10"};
 static const float rootcolor[]             = COLOR(0x000000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
