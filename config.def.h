@@ -12,6 +12,8 @@ static int gaps                            = 1;  /* 1 means gaps between windows
 static const unsigned int gappx            = 10; /* gap pixel between windows */
 static const int follow                    = 1;  /* 1 means follow windows when sent to another tag */
 static const unsigned int borderpx         = 1;  /* border pixel of windows */
+static const unsigned int systrayspacing   = 2; /* systray spacing */
+static const int showsystray               = 1; /* 0 means no systray */
 static const int showbar                   = 1; /* 0 means no bar */
 static const int topbar                    = 1; /* 0 means bottom bar */
 static const int refresh_colors            = 1; /* 1 means reloading colors when the session starts*/
@@ -205,4 +207,6 @@ static const Button buttons[] = {
 	{ ClkTagBar,   0,      BTN_RIGHT,  toggleview,     {0} },
 	{ ClkTagBar,   MODKEY, BTN_LEFT,   tag,            {0} },
 	{ ClkTagBar,   MODKEY, BTN_RIGHT,  toggletag,      {0} },
+	{ ClkTray,     0,      BTN_LEFT,   trayactivate,   {0} },
+	{ ClkTray,     0,      BTN_RIGHT,  traymenu,       {0} },
 };
