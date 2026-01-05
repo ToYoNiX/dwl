@@ -3,6 +3,12 @@
 
 # FOR UTILS REFER TO THE AUTOSTART SECTION IN CONFIG.DEF.H
 
+# User Autostart
+if [ -f "$HOME/.scripts/autostart.sh" ]
+then
+    bash $HOME/.scripts/autostart.sh
+fi
+
 # Update Dbus Environment
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
 
